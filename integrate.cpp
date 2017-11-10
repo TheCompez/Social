@@ -36,13 +36,8 @@ Integrate::Integrate()
 //Open app directly
 void Integrate::telegram (const QString &domain)
 {
-
-#if defined(OS_MOBILE)
+  
   QDesktopServices::openUrl(QUrl("tg://resolve?domain=" + domain));
-#elif defined(OS_DESKTOP)
-  QDesktopServices::openUrl(QUrl("tg://resolve?domain=" + domain));
-#endif
-
 
 }
 void Integrate::callPhone (const QString &number)
@@ -80,12 +75,7 @@ void Integrate::sendEmail (const QString &address)
 
 void Integrate::shareTelegram (const QString &content)
 {
-
-#if defined(OS_MOBILE)
   QDesktopServices::openUrl(QUrl("tg://msg_url?url=" + content));
-#elif defined(OS_DESKTOP)
-  QDesktopServices::openUrl(QUrl("tg://msg_url?url=" + content));
-#endif
 
 }
 void Integrate::shareTweet (const QString &content)
