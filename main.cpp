@@ -9,7 +9,7 @@
 
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include "intergrate.h"
+#include "integrate.h"
 
 using namespace Service;
 
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
   QGuiApplication app(argc, argv);
 
-  qmlRegisterType <Intergrate> ("api.dotwaves.com", 1,0, "Service");
+  qmlRegisterType <Integrate> ("api.dotwaves.com", 1,0, "Service");
 
   QQmlApplicationEngine engine;
   engine.load(QUrl(QStringLiteral("qrc:/main.qml")));

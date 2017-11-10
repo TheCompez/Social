@@ -1,13 +1,13 @@
 //
-//  File : intergrate.cpp
-//  Class or Function (Intergrate)
+//  File : Integrate.cpp
+//  Class or Function (Integrate)
 //
 //  Created by Kambiz Asadzadeh on 2017/11/10.
 //  Copyright © 2017 Kambiz Asadzadeh. All rights reserved.
 //
 
 
-#include "intergrate.h"
+#include "integrate.h"
 
 #include <QDesktopServices>
 #include <QUrl>
@@ -28,13 +28,13 @@ using namespace Service;
 #define OS_DESKTOP
 #endif
 
-Intergrate::Intergrate()
+Integrate::Integrate()
 {
 
 }
 
 //Open app directly
-void Intergrate::telegram (const QString &domain)
+void Integrate::telegram (const QString &domain)
 {
 
 #if defined(OS_MOBILE)
@@ -45,19 +45,19 @@ void Intergrate::telegram (const QString &domain)
 
 
 }
-void Intergrate::callPhone (const QString &number)
+void Integrate::callPhone (const QString &number)
 {
 
   QDesktopServices::openUrl(QUrl("tel://" + number));
 
 }
-void Intergrate::promptCallPhone (const QString &number)
+void Integrate::promptCallPhone (const QString &number)
 {
 
   QDesktopServices::openUrl(QUrl("telprompt://" + number));
 
 }
-void Intergrate::sendSMS (const QString &number)
+void Integrate::sendSMS (const QString &number)
 {
 
 #if defined (OS_MOBILE_IOS)
@@ -69,7 +69,7 @@ void Intergrate::sendSMS (const QString &number)
 #endif
 
 }
-void Intergrate::sendEmail (const QString &address)
+void Integrate::sendEmail (const QString &address)
 {
 
   QDesktopServices::openUrl(QUrl("mailto:" + address));
@@ -78,7 +78,7 @@ void Intergrate::sendEmail (const QString &address)
 
 //Sharing method
 
-void Intergrate::shareTelegram (const QString &content)
+void Integrate::shareTelegram (const QString &content)
 {
 
 #if defined(OS_MOBILE)
@@ -88,13 +88,13 @@ void Intergrate::shareTelegram (const QString &content)
 #endif
 
 }
-void Intergrate::shareTweet (const QString &content)
+void Integrate::shareTweet (const QString &content)
 {
 
   QDesktopServices::openUrl(QUrl("https://twitter.com/home?status=" + content));
 
 }
-void Intergrate::shareFacebook   (const QString &content)
+void Integrate::shareFacebook   (const QString &content)
 {
 
   QDesktopServices::openUrl(QUrl("https://www.facebook.com/sharer/sharer.php?u=" + content));

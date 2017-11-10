@@ -1,27 +1,27 @@
 //
-//  File : intergrate.h
-//  Class or Function (Intergrate)
+//  File : Integrate.h
+//  Class or Function (Integrate)
 //
 //  Created by Kambiz Asadzadeh on 2017/11/10.
 //  Copyright © 2017 Kambiz Asadzadeh. All rights reserved.
 //
 
 
-#ifndef INTERGRATE_H
-#define INTERGRATE_H
+#ifndef Integrate_H
+#define Integrate_H
 
 #include <QObject>
 #define INVOKE Q_INVOKABLE
 
 namespace Service {
 
-  class Intergrate : public QObject
+  class Integrate : public QObject
   {
 
     Q_OBJECT
 
   public:
-    Intergrate();
+    Integrate();
 
     //Open app directly
     INVOKE void telegram        (const QString &domain);
@@ -40,4 +40,4 @@ namespace Service {
 
 }
 
-#endif // INTERGRATE_H
+#endif // Integrate_H
