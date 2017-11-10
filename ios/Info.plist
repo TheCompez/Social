@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>CFBundleDisplayName</key>
+        <string>${PRODUCT_NAME}</string>
+        <key>CFBundleExecutable</key>
+        <string>$(PRODUCT_NAME)</string>
+        <key>CFBundleGetInfoString</key>
+        <string>Created by Qt/QMake</string>
+        <key>CFBundleIdentifier</key>
+        <string>Dotwaves.$(PRODUCT_NAME)</string>
+        <key>CFBundleName</key>
+        <string>$(PRODUCT_NAME)</string>
+        <key>NSPhotoLibraryUsageDescription</key>
+        <string>$(PRODUCT_NAME) for Image Sharing</string>
+
+        <key>UIRequiredDeviceCapabilities</key>
+        <array>
+                <string>armv7</string>
+        </array>
+
+        <!-- 📒 Contacts -->
+        <key>NSContactsUsageDescription</key>
+        <string>$(PRODUCT_NAME) contact use</string>
+
+        <!-- Telegram tg scheme -->
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+           <string>tg</string>
+        </array>
+
+<key>UISupportedInterfaceOrientations</key>
+<array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+</array>
+<key>UISupportedInterfaceOrientations~ipad</key>
+<array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+</array>
+
+</dict>
+</plist>

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ActionButton.qml</file>
+        <file>font/fontawesome-webfont.ttf</file>
+        <file>Action.js</file>
+        <file>ShareButton.qml</file>
+        <file>Seprator.qml</file>
+    </qresource>
+</RCC>
